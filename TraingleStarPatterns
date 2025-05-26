@@ -1,0 +1,39 @@
+Input:
+N=5
+
+Output 
+
+* 
+* * 
+* * * 
+* * * * 
+* * * * *
+
+Solution:
+
+class TraingleStarPattern1{
+
+  static int pattern1(int n){
+
+        for(int i=1;i<=n;i++)  //outer loop -> Used for counting number of lines/rows
+        {
+          for(int j=1;j<=i;j++)  // inner loop -> Used to print number of columns/oberserve symmentry
+           {
+               System.out.print("* ");
+           }
+         System.out.println();
+
+        }
+
+  }
+
+public static void main(String[] args){
+   
+int a=5;
+pattern1(a);
+
+}
+
+}
+
+
